@@ -1,0 +1,14 @@
+#partial-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section-box {
+    border-style: ridge;
+    width: 95%;
+    margin: 5px 0 5px 0;
+  }
+  .header-title {
+    text-decoration: underline;
+  }
