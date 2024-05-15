@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import PartialShowcase from './partials/PartialShowcase';
 
+// comment for test
+
 function App() {
   return (
 
