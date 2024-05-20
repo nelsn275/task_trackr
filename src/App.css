@@ -1,3 +1,14 @@
+:root {
+  --primary-color: blue;
+  --secondary-color: green;
+  --font-family: 'Poppins', sans-serif;
+  --button-color: #97CED7;
+  --message-color: #C99A71;
+  --background-color: #121212;
+  --header-footer-color: #1C1C1C;
+  --text-color: #E1E1E1;
+}
+
 .App {
   text-align: center;
 }

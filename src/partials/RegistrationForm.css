@@ -1,0 +1,41 @@
+#registrationFormBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px outset black;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+}
+
+#registrationFormBox form {
+    width: 100%;
+}
+
+#registrationFormBox p {
+    background-color: var(--message-color);
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+}
+
+#registrationFormBox a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#registrationFormBox input, button {
+    margin: 0 0 10px 0;
+    width: 80%
+}
+
+#registrationFormBox button {
+    background-color: var(--button-color);
+    height: 44px;
+    border-radius: 5px;
+}
+
+#passwordError {
+    color: red;
+}
+
+
