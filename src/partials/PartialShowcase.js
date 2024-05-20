@@ -9,33 +9,33 @@ import Footer from './Footer';
 function PartialShowcase() {
   return (
     <div id="partial-showcase">
-        <section class="section-box">
-          <h2 class="header-title">Header Visual</h2>
+        <section className="section-box">
+          <h2 className="header-title">Header Visual</h2>
           <Header />
         </section>
 
-        <section class="section-box">
-          <h2 class="header-title">Horizontal Menu Visual</h2>
+        <section className="section-box">
+          <h2 className="header-title">Horizontal Menu Visual</h2>
           <HorizontalMenu />
         </section>
 
-        <section class="section-box">
-          <h2 class="header-title">Hamburger Menu Visual</h2>
+        <section className="section-box">
+          <h2 className="header-title">Hamburger Menu Visual</h2>
           <HamburgerMenu />
         </section>
 
-        <section class="section-box">
-          <h2 class="header-title">Sign In Form Visual</h2>
+        <section className="section-box">
+          <h2 className="header-title">Sign In Form Visual</h2>
           <SignInForm />
         </section>
 
-        <section class="section-box">
-          <h2 class="header-title">Registration Form Visual</h2>
+        <section className="section-box">
+          <h2 className="header-title">Registration Form Visual</h2>
           <RegistrationForm />
         </section>
 
-        <section class="section-box">
-          <h2 class="header-title">Footer Visual</h2>
+        <section className="section-box">
+          <h2 className="header-title">Footer Visual</h2>
           <Footer />
         </section>
       </div>
