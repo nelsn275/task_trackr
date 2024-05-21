@@ -16,8 +16,11 @@ function Footer(toplink) {
         <div className = "sb_footer-links">
           <div className = "sb_footer-links-div">
             <h4>TaskTrackr</h4>
-              <a href="/about-us">
+              <a href="/about">
                 <p>About Us</p>
+              </a>
+              <a href="/profile">
+                <p>Profile</p>
               </a>
               <a href= {toplink}>
                 <p>Back to Top</p>
