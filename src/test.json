@@ -1,0 +1,107 @@
+[
+    {
+        "What": "Study for biology exam",
+        "When": "2024-06-05T09:00:00Z",
+        "Where": "David O. McKay Library",
+        "Who": "Alice Johnson",
+        "Description": "Review chapters 5-8 and complete practice questions."
+    },
+    {
+        "What": "Part-time job shift",
+        "When": "2024-06-02T14:00:00Z",
+        "Where": "The Burg",
+        "Who": "Alice Johnson",
+        "Description": "Work a 4-hour shift at the campus cafe."
+    },
+    {
+        "What": "Pickleball game",
+        "When": "2024-06-10T17:00:00Z",
+        "Where": "Rexburg Community Center",
+        "Who": "Alice Johnson and Friends",
+        "Description": "Friendly pickleball match with friends."
+    },
+    {
+        "What": "Date with John",
+        "When": "2024-06-04T19:00:00Z",
+        "Where": "The Hickory",
+        "Who": "Alice Johnson",
+        "Description": "Dinner date at the new Italian restaurant."
+    },
+    {
+        "What": "Write history essay",
+        "When": "2024-06-12T10:00:00Z",
+        "Where": "Dorm Room",
+        "Who": "Alice Johnson",
+        "Description": "Write a 1500-word essay on the Industrial Revolution."
+    },
+    {
+        "What": "Basketball practice",
+        "When": "2024-06-08T16:00:00Z",
+        "Where": "BYU-Idaho Center",
+        "Who": "Alice Johnson",
+        "Description": "Practice drills and scrimmage with the team."
+    },
+    {
+        "What": "Part-time job shift",
+        "When": "2024-06-07T12:00:00Z",
+        "Where": "The Burg",
+        "Who": "Alice Johnson",
+        "Description": "Work a 5-hour shift at the campus cafe."
+    },
+    {
+        "What": "Group study session",
+        "When": "2024-06-15T18:00:00Z",
+        "Where": "David O. McKay Library",
+        "Who": "Alice Johnson and Study Group",
+        "Description": "Study session with group for upcoming chemistry test."
+    },
+    {
+        "What": "Grocery shopping",
+        "When": "2024-06-03T10:00:00Z",
+        "Where": "Broulim's Fresh Foods",
+        "Who": "Alice Johnson",
+        "Description": "Buy groceries for the week."
+    },
+    {
+        "What": "Call parents",
+        "When": "2024-06-18T20:00:00Z",
+        "Where": "Dorm Room",
+        "Who": "Alice Johnson",
+        "Description": "Catch up with parents on the phone."
+    },
+    {
+        "What": "Volunteer at animal shelter",
+        "When": "2024-06-11T09:00:00Z",
+        "Where": "Rexburg Animal Shelter",
+        "Who": "Alice Johnson",
+        "Description": "Help out at the animal shelter for the morning."
+    },
+    {
+        "What": "Attend guest lecture",
+        "When": "2024-06-20T14:00:00Z",
+        "Where": "Taylor Building Auditorium",
+        "Who": "Alice Johnson",
+        "Description": "Attend guest lecture on climate change."
+    },
+    {
+        "What": "Date with John",
+        "When": "2024-06-16T18:00:00Z",
+        "Where": "Fat Cats Rexburg",
+        "Who": "Alice Johnson",
+        "Description": "Watch a movie at the local cinema."
+    },
+    {
+        "What": "Pickleball practice",
+        "When": "2024-06-14T08:00:00Z",
+        "Where": "Rexburg Community Center",
+        "Who": "Alice Johnson",
+        "Description": "Practice pickleball skills and techniques."
+    },
+    {
+        "What": "Prepare presentation",
+        "When": "2024-06-22T15:00:00Z",
+        "Where": "Dorm Room",
+        "Who": "Alice Johnson",
+        "Description": "Prepare slides for the economics class presentation."
+    }
+]
