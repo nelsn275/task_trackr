@@ -5,13 +5,32 @@
 *         -- That command might take some time but will result in an internet tab loading up showing the project.
 *         -- As soon as you save any changes on your file, it will show on your internet tab.*/
 
+import React, { useState } from 'react';
 import './HamburgerMenu.css';
 
 function HamburgerMenu() {
-  return (
-    <div className="hamburgerMenu">
+  const [menuExpanded, setMenuExpanded] = useState(false);
 
-    </div>
+  const toggleMenu = () => {
+    setMenuExpanded(!menuExpanded);
+  };
+
+  return (
+    <>
+      <section
+        className={`hamburgerMenu ${menuExpanded ? 'expanded' : ''}`}
+        onClick={toggleMenu}
+      >
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </section>
+      <section className={`menu ${menuExpanded ? 'expanded' : ''}`}>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/profile">Profile</a>
+        <a href="/about">About</a>
+      </section>
+    </>
   );
 }
 

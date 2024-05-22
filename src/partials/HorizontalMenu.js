@@ -5,12 +5,15 @@
 *         -- That command might take some time but will result in an internet tab loading up showing the project.
 *         -- As soon as you save any changes on your file, it will show on your internet tab.*/
 
+import React from 'react';
 import './HorizontalMenu.css';
 
 function HorizontalMenu() {
   return (
     <div className="horizontalMenu">
-
+      <a href="/dashboard">Dashboard</a>
+      <a href="/profile">Profile</a>
+      <a href="/about">About</a>
     </div>
   );
 }
