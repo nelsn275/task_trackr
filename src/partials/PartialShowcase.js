@@ -38,7 +38,6 @@ function PartialShowcase() {
         </section>
 
         <section className="section-box">
-          <h2 className="header-title">Footer Visual</h2>
           <Footer />
         </section>
 
