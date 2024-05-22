@@ -5,6 +5,9 @@ import HamburgerMenu from './HamburgerMenu';
 import SignInForm from './SignInForm';
 import RegistrationForm from './RegistrationForm';
 import Footer from './Footer';
+import CreateTaskForm from './CreateTaskForm';
+import TaskDetail from './TaskDetail';
+import TaskList from './TaskList';
 
 function PartialShowcase() {
   return (
@@ -37,6 +40,21 @@ function PartialShowcase() {
         <section className="section-box">
           <h2 className="header-title">Footer Visual</h2>
           <Footer />
+        </section>
+
+        <section className="section-box">
+          <h2 className="header-title">Create Task Form Visual</h2>
+          <CreateTaskForm />
+        </section>
+
+        <section className="section-box">
+          <h2 className="header-title">Task Detail Visual</h2>
+          <TaskDetail />
+        </section>
+
+        <section className="section-box">
+          <h2 className="header-title">Task List Visual</h2>
+          <TaskList />
         </section>
       </div>
   );
