@@ -51,12 +51,12 @@ function SignInForm() {
           <input type="text" id="name" name="name" required /><br /> */}
           
           <label htmlFor="userName">Username:</label><br />
-          <input type="text" id="userName" name="userName" required /><br />
+          <input type="text" id="userName2" name="userName" required /><br />
           
           <label htmlFor="password">Password:</label><br />
           <input
             type="password"
-            id="password"
+            id="password2"
             name="password"
             required
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
