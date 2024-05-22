@@ -1,0 +1,66 @@
+#menu {
+  background-color: #E9E9E9;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px #545454 outset;
+  border-radius: 5px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; 
+  justify-content: center;
+}
+
+.header-content > * {
+  margin-right: 1rem;
+}
+
+#title, .menu-items, .hamburger-menu, #signinform {
+  color: black;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block; 
+}
+
+#title {
+  font-size: 3rem;
+}
+
+#logo {
+  font-size: .5rem;
+}
+
+#signinform button {
+  background-color: var(--button-color);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+#signinform button:hover {
+  background-color: #7DB5CD;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content > * {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  #horizontalmenu {
+    display: none;
+  }
+}
