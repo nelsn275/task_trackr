@@ -1,3 +1,8 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import About from './pages/About';
 import logo from './logo.svg';
 import './App.css';
 import PartialShowcase from './partials/PartialShowcase';
@@ -10,6 +15,16 @@ function App() {
     <div className="App">
 
       <PartialShowcase />
+
+      <Router>
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+      </Router>
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
