@@ -8,6 +8,7 @@ import Footer from './Footer';
 import CreateTaskForm from './CreateTaskForm';
 import TaskDetail from './TaskDetail';
 import TaskList from './TaskList';
+import { AuthProvider } from '../contexts/AuthContext';
 
 function PartialShowcase() {
   return (
@@ -32,10 +33,12 @@ function PartialShowcase() {
           <SignInForm />
         </section>
 
-        <section className="section-box">
-          <h2 className="header-title">Registration Form Visual</h2>
-          <RegistrationForm />
-        </section>
+        <AuthProvider>
+          <section className="section-box">
+            <h2 className="header-title">Registration Form Visual</h2>
+            <RegistrationForm />
+          </section>
+        </AuthProvider>
 
         <section className="section-box">
           <Footer />
