@@ -55,7 +55,7 @@ function RegistrationForm() {
     <div className="registrationForm">
       <section id="registrationFormBox">
         <h1>Registration Form</h1>
-        {currentUser && currentUser.email}
+        <p>You registered an account with: {currentUser && currentUser.email}</p>
         <p>We're excited for you to join TaskTrackr! Please enter some basic information to create an account. Here's to staying productive!</p>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Provide Your Name:</label><br />
