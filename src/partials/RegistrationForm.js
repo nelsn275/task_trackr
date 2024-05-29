@@ -51,12 +51,12 @@ function RegistrationForm() {
           <input type="text" id="name" name="name" required /><br />
           
           <label htmlFor="userName">Create Username:</label><br />
-          <input type="text" id="userName" name="userName" required /><br />
+          <input type="text" id="userName1" name="userName" required /><br />
           
           <label htmlFor="password">Enter Password:</label><br />
           <input
             type="password"
-            id="password"
+            id="password1"
             name="password"
             required
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
