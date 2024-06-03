@@ -1,0 +1,36 @@
+
+.taskList {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    margin-left: 0;
+}
+
+.taskList h1 {
+    color: var(--text-color);
+}
+
+.taskList button {
+    background-color: var(--button-color);
+    font-family: var(--font-family);
+    width: 100%;
+}
+
+.pTitle {
+    font-weight: bold;
+}
+
+.taskUl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 0;
+}
+
+.taskDiv {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
+}
