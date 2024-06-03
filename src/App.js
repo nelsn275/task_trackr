@@ -6,10 +6,6 @@ import About from './pages/About';
 import logo from './logo.svg';
 import './App.css';
 import PartialShowcase from './partials/PartialShowcase';
-import './firebaseConfig';
-
-
-// comment for test
 
 function App() {
   return (
