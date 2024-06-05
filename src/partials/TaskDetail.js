@@ -6,11 +6,18 @@
 *         -- As soon as you save any changes on your file, it will show on your internet tab.*/
 
 import './TaskDetail.css';
+import events from '../test.json';
+import React, { useState } from 'react';
 
 function TaskDetail() {
+  
+
   return (
     <div className="taskDetail">
-        <h1>TaskDetail</h1>
+      <h1>TaskDetail</h1>
+      <div>
+        <p>Combined with task list</p>
+      </div>
     </div>
   );
 }
