@@ -1,0 +1,61 @@
+/* Things to fix: center social media images and get the bullet points closer to the text */
+body {
+  background-color: #E9E9E9;
+  font-family: var(--font-family);
+}
+
+.about {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 5px #545454 outset;
+  border-radius: 5px;
+}
+
+.about h1 {
+  font-size: 2rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+}
+
+.about a {
+  color: var(--button-color);
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #545454;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#socialmediaimg {
+  margin: 0 10px; 
+}
+
+.about ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.about ul li {
+  margin-bottom: 0.5rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .about {
+    width: 90%;
+    margin-top: 1rem;
+  }
+}
+
