@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css';
 
 const About = () => {
     console.log('Rendering About Page');
@@ -18,7 +19,11 @@ const About = () => {
               <li>Note 2</li>
               <li>Note 3</li>
             </ul>
+<<<<<<< HEAD
             <div className="socialmedia">
+=======
+            <div className="socialmediaabout">
+>>>>>>> ab1578164eacabc5efb1af359f232ec4687256ae
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 1" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 2" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 3" /></a>
@@ -37,7 +42,11 @@ const About = () => {
               <li>Note 2</li>
               <li>Note 3</li>
             </ul>
+<<<<<<< HEAD
             <div className="socialmedia">
+=======
+            <div className="socialmediaabout">
+>>>>>>> ab1578164eacabc5efb1af359f232ec4687256ae
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 1" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 2" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 3" /></a>
@@ -56,7 +65,11 @@ const About = () => {
               <li>Note 2</li>
               <li>Note 3</li>
             </ul>
+<<<<<<< HEAD
             <div className="socialmedia">
+=======
+            <div className="socialmediaabout">
+>>>>>>> ab1578164eacabc5efb1af359f232ec4687256ae
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 1" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 2" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 3" /></a>
@@ -75,7 +88,11 @@ const About = () => {
               <li>Note 2</li>
               <li>Note 3</li>
             </ul>
+<<<<<<< HEAD
             <div className="socialmedia">
+=======
+            <div className="socialmediaabout">
+>>>>>>> ab1578164eacabc5efb1af359f232ec4687256ae
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 1" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 2" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 3" /></a>
@@ -94,7 +111,11 @@ const About = () => {
               <li>Note 2</li>
               <li>Note 3</li>
             </ul>
+<<<<<<< HEAD
             <div className="socialmedia">
+=======
+            <div className="socialmediaabout">
+>>>>>>> ab1578164eacabc5efb1af359f232ec4687256ae
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 1" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 2" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 3" /></a>
@@ -113,7 +134,11 @@ const About = () => {
               <li>Note 2</li>
               <li>Note 3</li>
             </ul>
+<<<<<<< HEAD
             <div className="socialmedia">
+=======
+            <div className="socialmediaabout">
+>>>>>>> ab1578164eacabc5efb1af359f232ec4687256ae
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 1" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 2" /></a>
               <a href="#" id="socialmediaimg"><img src="#" alt="Social Media Logo 3" /></a>

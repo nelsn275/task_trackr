@@ -7,11 +7,19 @@
 
 import React, { useState } from 'react';
 import './RegistrationForm.css';
+import { useAuth } from '../contexts/AuthContext'
 
 function RegistrationForm() {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
   const [error, setError] = useState('');
+  const { signup, currentUser } = useAuth()
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setError('');
+  };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
@@ -32,6 +40,8 @@ function RegistrationForm() {
       // Proceed with form submission or other actions
       console.log('Form submitted');
     }
+
+    signup(email, password)
   };
 
   const getPasswordConfirmStyle = () => {
@@ -45,13 +55,21 @@ function RegistrationForm() {
     <div className="registrationForm">
       <section id="registrationFormBox">
         <h1>Registration Form</h1>
+        <p>You registered an account with: {currentUser && currentUser.email}</p>
         <p>We're excited for you to join TaskTrackr! Please enter some basic information to create an account. Here's to staying productive!</p>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Provide Your Name:</label><br />
           <input type="text" id="name" name="name" required /><br />
           
-          <label htmlFor="userName">Create Username:</label><br />
-          <input type="text" id="userName1" name="userName" required /><br />
+          <label htmlFor="email">Enter Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            value={email}
+            onChange={handleEmailChange}
+            /><br />
           
           <label htmlFor="password">Enter Password:</label><br />
           <input
