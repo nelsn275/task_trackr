@@ -9,9 +9,28 @@ import './CreateTaskForm.css';
 
 function CreateTaskForm() {
   return (
-    <div className="createTaskForm">
-        <h1>CreateTaskForm</h1>
-    </div>
+    <section className="createTaskForm">
+      <form>
+        {/* Title and Date are both required */}
+        <label htmlFor="title">Title:</label>
+        <input type="text" id="taskTitle" name="title" required /><br />
+
+        <label htmlFor="when">When is it happening?</label>
+        <input type="date" id="when" name="when" required /><br />
+
+        {/* Where, who, and the description are all optional */}
+        <label htmlFor="where">Where is it happening?</label>
+        <input type="text" id="where" name="where" /><br />
+
+        <label htmlFor="who">Who's going?</label>
+        <input type="text" id="who" name="who"/><br />
+
+        <label htmlFor="description">Description</label>
+        <textarea type="text" id="description" name="description"></textarea><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   );
 }
 
