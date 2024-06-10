@@ -41,6 +41,11 @@ body {
   #socialmediaimg {
     margin: 0 10px; 
   }
+
+  ul {
+    list-style-position: inside;
+    padding-left: 10px; 
+  }
   
   .about ul {
     list-style-position: inside;
