@@ -4,9 +4,9 @@
   --font-family: 'Poppins', sans-serif;
   --button-color: #97CED7;
   --message-color: #C99A71;
-  --background-color: #121212;
-  --header-footer-color: #1C1C1C;
-  --text-color: #E1E1E1;
+  --background-color: rgb(233, 233, 233);
+  --header-footer-color: #E9E9E9;
+  --text-color: black;
 }
 
 .App {
@@ -25,7 +25,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--header-footer-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
