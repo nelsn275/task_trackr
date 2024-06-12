@@ -22,6 +22,9 @@ function Footer({toplink}) {
               <a href="/profile">
                 <p>Profile</p>
               </a>
+              <a href="/thankyou">
+                <p>Thank You</p>
+              </a>
               <a href= {toplink}>
                 <p>Back to Top</p>
               </a>
