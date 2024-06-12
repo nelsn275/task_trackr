@@ -50,12 +50,6 @@ function PartialShowcase() {
         </section>
 
         <section className="section-box">
-          <h2 className="header-title">Task Detail Visual</h2>
-          <TaskDetail />
-        </section>
-
-        <section className="section-box">
-          <h2 className="header-title">Task List Visual</h2>
           <TaskList />
         </section>
       </div>
