@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import About from './pages/About';
 import logo from './logo.svg';
+import ThankYou from './pages/ThankYou';
 import './App.css';
 import PartialShowcase from './partials/PartialShowcase';
 
@@ -11,33 +12,17 @@ function App() {
   return (
 
     <div className="App">
-
-      <PartialShowcase />
-
       <Router>
         <div>
           <Routes>
+            <Route path="/partial" element={<PartialShowcase />} />
             <Route path="/" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/about" element={<About />} />
+            <Route path="/thankyou" element={<ThankYou/>} />
           </Routes>
         </div>
       </Router>
-
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }

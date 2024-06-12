@@ -1,6 +1,6 @@
 /* Things to fix: center social media images and get the bullet points closer to the text */
 body {
-    background-color: #E9E9E9;
+    background-color: var(--background-color);
     font-family: var(--font-family);
   }
   

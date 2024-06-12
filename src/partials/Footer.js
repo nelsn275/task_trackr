@@ -9,7 +9,7 @@ import './Footer.css';
 import fb from "../assets/fbimg.png"
 import linkedin from "../assets/linkimg.png"
 
-function Footer(toplink) {
+function Footer({toplink}) {
   return (
     <div className = "footer">
       <div className = "sb_footer section_padding">
@@ -21,6 +21,9 @@ function Footer(toplink) {
               </a>
               <a href="/profile">
                 <p>Profile</p>
+              </a>
+              <a href="/thankyou">
+                <p>Thank You</p>
               </a>
               <a href= {toplink}>
                 <p>Back to Top</p>
