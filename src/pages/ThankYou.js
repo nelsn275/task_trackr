@@ -1,5 +1,7 @@
 import Header from '../partials/Header';
 import Footer from '../partials/Footer';
+import check from '../assets/checkbox.png';
+import './ThankYou.css';
 import React from 'react';
 
 const ThankYou = () => {
@@ -8,8 +10,14 @@ const ThankYou = () => {
         <div>
             <Header/>
             <div>
-                <h1>Thank You Page</h1>
-                <p></p>
+                <h1>Thank You For Registering to TaskTrackr!</h1>
+                <div className='text'>
+                    <p>Thank you for registering to TaskTrackr! We appreciate your time and hope that you 
+                        can solve all of your task tracking related problems! To access your account click 
+                        the Sign In button!
+                    </p>
+                </div>
+                <img src={check} alt="Checkbox" className='checkbox'></img>
             </div>
             <Footer toplink="thankyou"/>
         </div>

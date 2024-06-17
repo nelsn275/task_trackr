@@ -22,9 +22,6 @@ function Footer({toplink}) {
               <a href="/profile">
                 <p>Profile</p>
               </a>
-              <a href="/thankyou">
-                <p>Thank You</p>
-              </a>
               <a href= {toplink}>
                 <p>Back to Top</p>
               </a>
@@ -32,8 +29,8 @@ function Footer({toplink}) {
           <div className = "sb_footer-links-div">
             <h4>Coming soon on</h4>
             <div className = "socialmedia">
-              <p><img src={fb} alt=""/></p>
-              <p><img src={linkedin} alt=""/></p>
+              <p><img src={fb} alt="Facebook Logo"/></p>
+              <p><img src={linkedin} alt="Linkedin Logo"/></p>
             </div>
           </div>
         </div>
