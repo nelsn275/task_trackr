@@ -1,5 +1,5 @@
 #menu {
-  background-color: #E9E9E9;
+  background-color: var(--header-footer-color);
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@
 }
 
 #title, .menu-items, .hamburger-menu, #signinform {
-  color: black;
+  color: var(--text-color);
   font-family: var(--font-family);
   font-weight: bold;
   font-size: 1.5rem;
