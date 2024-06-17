@@ -9,6 +9,7 @@ const ThankYou = () => {
             <Header/>
             <div>
                 <h1>Thank You Page</h1>
+                <p></p>
             </div>
             <Footer toplink="thankyou"/>
         </div>
