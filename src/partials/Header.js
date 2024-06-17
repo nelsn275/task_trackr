@@ -8,7 +8,6 @@
 import './Header.css';
 import HorizontalMenu from './HorizontalMenu';
 import HamburgerMenu from './HamburgerMenu';
-import SignInForm from './SignInForm';
 
 function Header() {
   return (

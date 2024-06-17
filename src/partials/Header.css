@@ -4,8 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px #545454 outset;
-  border-radius: 5px;
+  border-bottom: 1px solid #545454;
 }
 
 .header-content {
