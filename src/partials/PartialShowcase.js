@@ -28,10 +28,12 @@ function PartialShowcase() {
           <HamburgerMenu />
         </section>
 
+        <AuthProvider>
         <section className="section-box">
           <h2 className="header-title">Sign In Form Visual</h2>
           <SignInForm />
         </section>
+        </AuthProvider>
 
         <AuthProvider>
           <section className="section-box">
