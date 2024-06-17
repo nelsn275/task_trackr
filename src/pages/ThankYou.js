@@ -1,4 +1,5 @@
 import React from 'react';
+import './ThankYou.css';
 import Header from '../partials/Header';
 import Footer from '../partials/Footer';
 

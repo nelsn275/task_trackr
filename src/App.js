@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 
 //Pages
-import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import About from './pages/About';
 import Login from './pages/Login';
@@ -19,7 +19,7 @@ function App() {
       <Router>
         <div>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/about" element={<About />} />
             <Route path="/registration" element={<Registration />} />

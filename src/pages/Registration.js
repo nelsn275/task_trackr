@@ -1,4 +1,5 @@
 import React from 'react';
+import './Registration.css';
 import Header from '../partials/Header';
 import RegistrationForm from '../partials/RegistrationForm';
 import { AuthProvider } from '../contexts/AuthContext';
