@@ -22,10 +22,12 @@ import Header from './partials/Header';
 import Register from './pages/Register';
 import SignIn from './pages/SignIn';
 
+import Showcase from './pages/Showcase';
 import logo from './logo.svg';
 import ThankYou from './pages/ThankYou';
 import './App.css';
 import PartialShowcase from './partials/PartialShowcase';
+import Header from './partials/Header';
 
 function App() {
   return (
