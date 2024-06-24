@@ -1,14 +1,7 @@
-/*** INSTRUCTIONS
-* HTML Code -- Should be placed inside the "SignInForm" div.
-* CSS Code -- Use the SignInForm.css file in this folder.
-* Testing -- Type the following command: npm run start
-*         -- That command might take some time but will result in an internet tab loading up showing the project.
-*         -- As soon as you save any changes on your file, it will show on your internet tab.*/
-
 import React, { useState } from 'react';
-import './RegistrationForm';
+import './Register';
 
-function SignInForm() {
+const SignIn = () => {
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
   const [error, setError] = useState('');
@@ -86,4 +79,4 @@ function SignInForm() {
   );
 }
 
-export default SignInForm;
+export default SignIn;
