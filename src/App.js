@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
-
 //Page Imports
 import Home from './pages/Home';
 import Profile from './pages/Profile';
@@ -12,11 +11,11 @@ import Register from './pages/Register';
 import SignIn from './pages/SignIn';
 import Showcase from './pages/Showcase';
 
+
 function App() {
   return (
 
     <div className="App">
-
       <AuthProvider>
         <Router>
           <div>
