@@ -1,0 +1,39 @@
+body {
+  background-color: #E9E9E9;
+  font-family: var(--font-family);
+}
+
+.profile {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 5px #545454 outset;
+  border-radius: 5px;
+}
+
+.profile h1 {
+  font-size: 2rem;
+}
+
+.profile p {
+  font-size: 1.5rem;
+}
+
+.profile a {
+  color: var(--button-color);
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
