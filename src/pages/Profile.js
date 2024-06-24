@@ -1,13 +1,17 @@
 import React from 'react';
+import './Profile.css';
+import UpdateProfileForm from '../partials/UpdateProfileForm';
 
 const Profile = () => {
-    console.log('Rendering Profile Page');
   return (
-    <div>
-      <h1>Profile Page</h1>
-      <p>Welcome to the Profile page!</p>
+  <section className="profile">
+    <div className="profile-container">
+      <main>
+        <UpdateProfileForm />
+      </main>
     </div>
+  </section>
   );
-}
+};
 
 export default Profile;
