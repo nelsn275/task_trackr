@@ -8,7 +8,6 @@
 import './Header.css';
 import HorizontalMenu from './HorizontalMenu';
 import HamburgerMenu from './HamburgerMenu';
-import SignInForm from './SignInForm';
 
 function Header() {
   return (
@@ -23,7 +22,7 @@ function Header() {
           </div>
           <div id="title">TaskTrack<span id='blue'>r</span></div>
         <div id="signinform">
-          <a href="signin.js"><button type="button">Sign In</button></a>
+          <a href="/signin"><button type="button">Sign In</button></a>
         </div>
         </div>
         <div id="horizontalmenu">

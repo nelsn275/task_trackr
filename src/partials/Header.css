@@ -1,11 +1,10 @@
 #menu {
-  background-color: #E9E9E9;
+  background-color: var(--header-footer-color);
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px #545454 outset;
-  border-radius: 5px;
+  border-bottom: 1px solid #545454;
 }
 
 .header-content {
@@ -24,7 +23,7 @@
 }
 
 #title, .menu-items, .hamburger-menu, #signinform {
-  color: black;
+  color: var(--text-color);
   font-family: var(--font-family);
   font-weight: bold;
   font-size: 1.5rem;
