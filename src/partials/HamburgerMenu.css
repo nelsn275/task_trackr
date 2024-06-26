@@ -27,6 +27,8 @@
   box-shadow: var(--button-color) 0 0 10px;
   padding: 1rem;
   border-radius: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .menu.expanded {
