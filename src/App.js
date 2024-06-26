@@ -10,13 +10,17 @@ import ThankYou from './pages/ThankYou';
 import Register from './pages/Register';
 import SignIn from './pages/SignIn';
 import Showcase from './pages/Showcase';
-
+import Header from './partials/Header';
+import Footer from './partials/Footer';
 
 function App() {
   return (
 
     <div className="App">
+
+      
       <AuthProvider>
+        <Header />
         <Router>
           <div>
             <Routes>
@@ -30,6 +34,7 @@ function App() {
             </Routes>
           </div>
         </Router>
+        <Footer />
       </AuthProvider>
     </div>
   );

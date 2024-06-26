@@ -15,6 +15,7 @@ function HorizontalMenu() {
       <a href="/profile">Profile</a>
       <a href="/about">About</a>
       <a href='/showcase'>Showcase</a>
+      <a href='/thankyou'>Thank You</a>
     </div>
   );
 }

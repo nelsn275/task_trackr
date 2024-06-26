@@ -8,7 +8,6 @@ const ThankYou = () => {
     ('Rendering ThankYou Page');
     return (
         <div>
-            <Header/>
             <div>
                 <h1>Thank You For Registering to TaskTrackr!</h1>
                 <div className='text'>
@@ -19,7 +18,6 @@ const ThankYou = () => {
                 </div>
                 <img src={check} alt="Checkbox" className='checkbox'></img>
             </div>
-            <Footer toplink="thankyou"/>
         </div>
     );
 }
