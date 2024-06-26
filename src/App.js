@@ -4,10 +4,9 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import About from './pages/About';
 import Showcase from './pages/Showcase';
-import logo from './logo.svg';
 import './App.css';
-import PartialShowcase from './partials/PartialShowcase';
 import Header from './partials/Header';
+import Footer from './partials/Footer';
 
 function App() {
   return (
@@ -26,21 +25,8 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <Footer />
 
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }

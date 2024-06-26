@@ -3,7 +3,7 @@
 }
 
 .footer{
-    background-color: var(--header-footer-color);
+    background-color: var(--message-color);
     font-family: var(--font-family);
 }
 
