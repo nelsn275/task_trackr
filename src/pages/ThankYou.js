@@ -18,7 +18,6 @@ const ThankYou = () => {
                 </div>
                 <img src={check} alt="Checkbox" className='checkbox'></img>
             </div>
-            <Footer toplink="thankyou"/>
         </div>
     );
 }
