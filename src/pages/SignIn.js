@@ -43,20 +43,23 @@ const SignIn = () => {
           {/* <label htmlFor="name">Provide Your Name:</label><br />
           <input type="text" id="name" name="name" required /><br /> */}
           
-          <label htmlFor="userName">Username:</label><br />
-          <input type="text" id="userName2" name="userName" required /><br />
+            <label htmlFor="userName">Username:</label><a href="#"> Forgot Username?</a><br />
+            <input type="text" id="userName2" name="userName" required /><br />
+            
+            
+            
+            <label htmlFor="password">Password:</label><a href="#"> Forgot Password?</a><br />
+            <input
+              type="password"
+              id="password2"
+              name="password"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number, one uppercase letter, one lowercase letter, and at least 8 characters"
+              value={password}
+              onChange={handlePasswordChange}
+            /><br />
           
-          <label htmlFor="password">Password:</label><br />
-          <input
-            type="password"
-            id="password2"
-            name="password"
-            required
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-            title="Must contain at least one number, one uppercase letter, one lowercase letter, and at least 8 characters"
-            value={password}
-            onChange={handlePasswordChange}
-          /><br />
           
           {/* <label htmlFor="passwordConfirm">Confirm Password:</label><br />
           <input
@@ -73,7 +76,7 @@ const SignIn = () => {
           
           <button type="submit">Sign In</button>
         </form>
-        <p><a href="#">Forgot Username?</a> | <a href="#">Forgot Password?</a></p>
+        <p>Don't have an account? <a href="/register">Register</a></p>
       </section>
     </div>
   );

@@ -8,7 +8,6 @@ const ThankYou = () => {
     ('Rendering ThankYou Page');
     return (
         <div>
-            <Header/>
             <div>
                 <h1>Thank You For Registering to TaskTrackr!</h1>
                 <div className='text'>

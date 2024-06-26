@@ -10,6 +10,9 @@
 
 .sb_footer{
     display: flex;
+    padding: 0px;
+    padding-right: 3%;
+    padding-left: 3%;
     flex-direction: column;
 }
 
