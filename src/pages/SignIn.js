@@ -1,52 +1,59 @@
 import React, { useState } from 'react';
-import './Register';
+import './SignIn.css';
+import { useAuth } from '../contexts/AuthContext'
 
 const SignIn = () => {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [passwordConfirm, setPasswordConfirm] = useState('');
   const [error, setError] = useState('');
+  const { signIn, currentUser } = useAuth();
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setError('');
+  };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
     setError('');
   };
 
-  const handlePasswordConfirmChange = (e) => {
-    setPasswordConfirm(e.target.value);
-    setError('');
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (password !== passwordConfirm) {
-      setError('Passwords do not match.');
-    } else {
-      setError('');
-      // Proceed with form submission or other actions
-      console.log('Form submitted');
-    }
-  };
+    setError('');
+    // Proceed with form submission or other actions
+    console.log('Form submitted');
 
-  const getPasswordConfirmStyle = () => {
-    if (passwordConfirm === '') {
-      return {};
+    try {
+      await signIn(email, password) // sign in attempt (see AuthContext.js)
     }
-    return password === passwordConfirm ? { backgroundColor: '#BBFFA7' } : { backgroundColor: '#FFB6A7' };
+    catch { // sign in fails with error
+      setError('No password match. Check info and try again')
+    }
   };
 
   return (
     <div className="registrationForm">
       <section id="registrationFormBox">
         <h1>Sign In</h1>
+        <p>You are logged in as: {currentUser && currentUser.email}</p>
         <p>Welcome back to TaskTrackr! Please enter your login info. Here's to staying productive!</p>
         <form onSubmit={handleSubmit}>
           {/* <label htmlFor="name">Provide Your Name:</label><br />
           <input type="text" id="name" name="name" required /><br /> */}
           
-            <label htmlFor="userName">Username:</label><a href="#"> Forgot Username?</a><br />
-            <input type="text" id="userName2" name="userName" required /><br />
+            {/* <label htmlFor="userName">Username:</label><a href="#"> Forgot Username?</a><br />
+            <input type="text" id="userName2" name="userName" required /><br /> */}
             
-            
+          <label htmlFor="email">Enter Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            value={email}
+            onChange={handleEmailChange}
+            /><br />
             
             <label htmlFor="password">Password:</label><a href="#"> Forgot Password?</a><br />
             <input
