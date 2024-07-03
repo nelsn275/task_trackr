@@ -34,9 +34,8 @@ const Register = () => {
       setError('');
       // Proceed with form submission or other actions
       console.log('Form submitted');
+      signup(email, password)
     }
-
-    signup(email, password)
   };
 
   const getPasswordConfirmStyle = () => {
