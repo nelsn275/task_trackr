@@ -29,6 +29,8 @@ function HamburgerMenu() {
         <a href="/dashboard">Dashboard</a>
         <a href="/profile">Profile</a>
         <a href="/about">About</a>
+        <a href="/showcase">Showcase</a>
+        <a href="/ThankYou">Thank You</a>
       </section>
     </>
   );
