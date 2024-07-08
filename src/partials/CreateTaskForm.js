@@ -53,7 +53,7 @@ function CreateTaskForm() {
     <section className="createTaskForm">
       <form onSubmit={saveTask}>
         <label htmlFor="title">Title:</label>
-        <input type="text" id="title" name="title" value={formData.title} onChange={handleChange} required /><br />
+        <input type="text" id="name" name="title" value={formData.title} onChange={handleChange} required /><br />
 
         <label htmlFor="when">When is it happening?</label>
         <input type="date" id="when" name="when" value={formData.when} onChange={handleChange} required /><br />

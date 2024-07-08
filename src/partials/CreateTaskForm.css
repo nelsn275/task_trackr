@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 50rem;
 }
 
 .createTaskForm input {
@@ -78,10 +78,16 @@ button {
 
     .createTaskForm input,
     .createTaskForm textarea {
-        width: 80%;
+        width: 160%;
     }
 
     .createTaskForm button {
         width: 80%;
     }
 }
+
+/* @media screen and (min-width: 32em) {
+    .createTaskForm form {
+        width: 50rem;
+    }
+} */
