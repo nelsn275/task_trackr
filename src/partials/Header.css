@@ -57,6 +57,10 @@
   background-color: #7DB5CD;
 }
 
+#signedin {
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
   .header-content {
     flex-direction: column;
