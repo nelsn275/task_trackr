@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import './CreateTaskForm.css';
 import { db, auth } from '../firebase';
+import { collection, addDoc } from 'firebase/firestore';
 
-
-// For some reason ChatGPT wanted it set up like this
 function CreateTaskForm() {
   const [formData, setFormData] = useState({
     title: '',
@@ -25,10 +24,9 @@ function CreateTaskForm() {
   const saveTask = async (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
     const user = auth.currentUser;
-    console.log('USer: ' + user)
     if (user) {
       try {
-        await db.collection('tasks').add({
+        await addDoc(collection(db, 'tasks'), {
           ...formData,
           userId: user.uid,
         });
@@ -41,7 +39,7 @@ function CreateTaskForm() {
           description: ''
         });
       } catch (error) {
-        console.error('Error adding document: ', error);
+        console.log('Error adding document: ', error);
         alert('Failed to submit task. Please try again.', error);
       }
     } else {
