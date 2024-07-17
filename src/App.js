@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 //Page Imports
 import Home from './pages/Home';
@@ -24,6 +24,7 @@ function App() {
         <Router>
           <div>
             <Routes>
+              <Route path="/task_trackr" element={<Navigate replace to="/dashboard" />} />
               <Route path="/dashboard" element={<Home />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/about" element={<About />} />
