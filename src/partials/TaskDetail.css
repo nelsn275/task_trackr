@@ -1,0 +1,15 @@
+.taskDetail-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.taskDetail-map iframe {
+  box-shadow: 0 0 15px #000000;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 400px;
+  max-width: 500px;
+}
+
