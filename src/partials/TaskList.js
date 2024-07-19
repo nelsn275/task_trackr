@@ -25,7 +25,6 @@ function TaskList() {
 
   return (
     <div className="taskList">
-        <h1>Task List + Task Detail</h1>
         <ul className="taskUl">
         {tasks.map((task, index) => (
           <div key={task} className="taskDiv">
