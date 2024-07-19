@@ -2,11 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { db, auth } from '../firebase';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 import { onAuthStateChanged } from 'firebase/auth';
+import './UserTasks.css';
 
 function UserTasks() {
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [isOverlayVisible, setOverlayVisible] = useState(false);
+  const [selectedTask, setSelectedTask] = useState(null);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
@@ -34,31 +37,50 @@ function UserTasks() {
     return () => unsubscribe();
   }, []);
 
+  const toggleOverlay = (task) => {
+    setSelectedTask(task);
+    setOverlayVisible(!isOverlayVisible);
+  };
+
   if (loading) {
-    return React.createElement('div', null, 'Loading...');
+    return <div>Loading...</div>;
   }
 
   if (error) {
-    return React.createElement('div', null, error);
+    return <div>{error}</div>;
   }
 
-  return React.createElement(
-    'section',
-    { className: 'userTasks' },
-    React.createElement('h2', null, 'Your Tasks'),
-    tasks.length > 0 ? (
-      tasks.map(task => (
-        React.createElement('div', { key: task.id, className: 'task' },
-          React.createElement('h3', null, task.title),
-          React.createElement('p', null, `When: ${task.when}`),
-          React.createElement('p', null, `Where: ${task.where}`),
-          React.createElement('p', null, `Who: ${task.who}`),
-          React.createElement('p', null, task.description)
-        )
-      ))
-    ) : (
-      React.createElement('p', null, 'No tasks found.')
-    )
+  return (
+    <div className="userTasks">
+      <h2>Your Tasks</h2>
+      <ul className="taskUl">
+        {tasks.length > 0 ? (
+          tasks.map(task => (
+            <div key={task.id} className="taskDiv">
+              <button onClick={() => toggleOverlay(task)}>
+                <p className="pTitle">{task.title}</p>
+                <p>When: {new Date(task.when).toLocaleString()}</p>
+              </button>
+            </div>
+          ))
+        ) : (
+          <p>No tasks found.</p>
+        )}
+      </ul>
+
+      {isOverlayVisible && selectedTask && (
+        <div className="overlay">
+          <div className="overlay-content">
+            <button className="close-button" onClick={() => toggleOverlay(null)}>X</button>
+            <h2>{selectedTask.title}</h2>
+            <p><strong>When:</strong> {new Date(selectedTask.when).toLocaleString()}</p>
+            <p><strong>Where:</strong> {selectedTask.where}</p>
+            <p><strong>Who:</strong> {selectedTask.who}</p>
+            <p><strong>Description:</strong> {selectedTask.description}</p>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 
