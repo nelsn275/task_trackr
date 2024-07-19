@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TaskList from '../partials/TaskList';
 import './Home.css';
 import CreateTaskForm from '../partials/CreateTaskForm';
+import UserTasks from '../partials/UserTasks';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
   return (
     <div>
       <button id="create_task" onClick={toggleOverlay}>Create Task</button>
+      <UserTasks />
       <TaskList />
       {isOverlayVisible &&(
           <div className="overlay">
